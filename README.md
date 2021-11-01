@@ -1,2 +1,2 @@
-# redis-ethdb
+.# redis-ethdb
 go-etheruem ethdb interfaces for Redis
