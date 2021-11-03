@@ -1,9 +1,12 @@
 package redisethdb
 
+// Stat typed string
 type Stat string
 
 const (
-	// Pool stats
+	/*
+		Pool stats
+	*/
 	HITS         = "Hits"
 	MISSES       = "Misses"
 	TIMEOUTS     = "Timeouts"
@@ -11,10 +14,14 @@ const (
 	IDLE_CONNS   = "IdleConns"
 	STABLE_CONNS = "StaleConns"
 
-	// Data stats
+	/*
+		Data stats
+	*/
 	DB_SIZE = "DbSize"
 
-	// Info info
+	/*
+		Info stats
+	*/
 	SERVER_INFO        = "Server"
 	CLIENTS_INFO       = "Clients"
 	MEMORY_INFO        = "Memory"

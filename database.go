@@ -51,6 +51,7 @@ type Database struct {
 	redis Redis
 }
 
+// NewDatabase creates a new Database
 func NewDatabase(ctx context.Context, r Redis) ethdb.Database {
 	return &Database{
 		ctx:   ctx,

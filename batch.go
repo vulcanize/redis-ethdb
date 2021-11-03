@@ -13,6 +13,7 @@ import (
 
 var _ ethdb.Batch = &Batch{}
 
+// Batching redis interface required for supporting ethdb.Batch
 type Batching interface {
 	Set(ctx context.Context, key string, value interface{}, expiration time.Duration) *redis.StatusCmd
 	Del(ctx context.Context, keys ...string) *redis.IntCmd
