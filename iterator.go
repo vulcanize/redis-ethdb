@@ -40,6 +40,7 @@ type Iterator struct {
 	err             error
 }
 
+// NewIterator creates a new Iterator
 func NewIterator(ctx context.Context, prefix string, scanSize int64, it Iterating) ethdb.Iterator {
 	if scanSize == 0 {
 		scanSize = defaultScanSize
